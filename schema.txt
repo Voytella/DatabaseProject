@@ -8,4 +8,4 @@ user(ID, name, email, city)
 member(ID, daysUntilExpiry)
 
 # transactions
-order(ID, custID, prodID, quantity, date)
+order(ID, custID, prodID, quantity, day, month, year, time)
