@@ -1,10 +1,10 @@
-1. (buyer <natJoin> order)
+1. (user <natJoin> order)
 
 2. # find all orders of a product
    # compile table of all products, then match IDs with "order" table
-   order <natJoin> (game ∪ console ∪ accessory)
+   order <natJoin> (console ∪ game ∪ accessory)
 
-3. _{buyer.city}g_{sum(order.quantity), sum(prod.price)}
-   (buyer <natJoin> order <natJoin> ρ_{prod}(game ∪ console ∪ accessory))
+3. _{user.city}g_{sum(order.quantity), sum(prod.price)}
+   (user <natJoin> order <natJoin> ρ_{prod}(console ∪ game ∪ accessory))
 
 4. 

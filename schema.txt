@@ -1,22 +1,9 @@
 # products
-game(ID, title, rating, price, quantity)
-console(ID, name, price, quantity)
-accessory(ID, name, price, quantity)
-
-# customers
-# (if a buyer is a member, buyer.ID == member.ID)
-buyer(ID, name, city, email)
-member(ID, daysUntilExpiry)
-
-# transactions
-order(ID, custID, prodID, quantity, date)
-------------------------------------------------
-# products
 console(ID, name, price)
 game(ID, title, publisher, console, price)
 accessory(ID, name, console, price)
 
-# customers
+# customers (if user is member, user,ID == member.ID)
 user(ID, name, email, city)
 member(ID, daysUntilExpiry)
 
