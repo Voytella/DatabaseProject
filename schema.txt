@@ -10,3 +10,15 @@ member(ID, daysUntilExpiry)
 
 # transactions
 order(ID, custID, prodID, quantity, date)
+------------------------------------------------
+# products
+console(ID, name, price)
+game(ID, title, publisher, console, price)
+accessory(ID, name, console, price)
+
+# customers
+user(ID, name, email, city)
+member(ID, daysUntilExpiry)
+
+# transactions
+order(ID, custID, prodID, quantity, date)

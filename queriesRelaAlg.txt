@@ -6,3 +6,5 @@
 
 3. _{buyer.city}g_{sum(order.quantity), sum(prod.price)}
    (buyer <natJoin> order <natJoin> ρ_{prod}(game ∪ console ∪ accessory))
+
+4. 
