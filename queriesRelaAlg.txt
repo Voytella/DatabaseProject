@@ -7,4 +7,7 @@
 3. _{user.city}g_{sum(order.quantity), sum(prod.price)}
    (user <natJoin> order <natJoin> ρ_{prod}(console ∪ game ∪ accessory))
 
-4. 
+4. Π_{user.name, user.email}(σ_{(g_{count(order.ID)} > 20) ∧ (order.year == <givenYear>)}
+                             (user <natJoin> order))
+
+5. 

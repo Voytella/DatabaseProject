@@ -3,7 +3,7 @@ console(ID, name, price)
 game(ID, title, publisher, console, price)
 accessory(ID, name, console, price)
 
-# customers (if user is member, user,ID == member.ID)
+# customers (if user is member, user.ID == member.ID)
 user(ID, name, email, city)
 member(ID, daysUntilExpiry)
 
