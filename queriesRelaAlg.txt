@@ -1,0 +1,8 @@
+1. (buyer <natJoin> order)
+
+2. # find all orders of a product
+   # compile table of all products, then match IDs with "order" table
+   order <natJoin> (game ∪ console ∪ accessory)
+
+3. _{buyer.city}g_{sum(order.quantity), sum(prod.price)}
+   (buyer <natJoin> order <natJoin> ρ_{prod}(game ∪ console ∪ accessory))

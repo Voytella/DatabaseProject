@@ -1,0 +1,12 @@
+# products
+game(ID, title, rating, price, quantity)
+console(ID, name, price, quantity)
+accessory(ID, name, price, quantity)
+
+# customers
+# (if a buyer is a member, buyer.ID == member.ID)
+buyer(ID, name, city, email)
+member(ID, daysUntilExpiry)
+
+# transactions
+order(ID, custID, prodID, quantity, date)
