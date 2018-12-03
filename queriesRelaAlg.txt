@@ -1,4 +1,4 @@
-1. (user <natJoin> order)
+1. user <natJoin> order
 
 2. # find all orders of a product
    # compile table of all products, then match IDs with "order" table
@@ -7,7 +7,15 @@
 3. _{user.city}g_{sum(order.quantity), sum(prod.price)}
    (user <natJoin> order <natJoin> ρ_{prod}(console ∪ game ∪ accessory))
 
-4. Π_{user.name, user.email}(σ_{(g_{count(order.ID)} > 20) ∧ (order.year == <givenYear>)}
+4. # assuming "contact info" is synonymous with "email", and "givenYear" will
+   # somehow be externally provided
+   Π_{user.name, user.email}(σ_{(g_{count(order.ID)} > 20) ∧ 
+                                (order.year == <givenYear>)}
                              (user <natJoin> order))
 
-5. 
+5. # not complete
+   _{order.month, prod.name}g_{max()}(ρ_{prod}(console ∪ game ∪ accessory)
+
+6. Π_{user.name}(σ_{member.daysUntilExpiry < 5}(user <natJoin> member))
+
+7. Π_{prod.ID}(σ_{(prod.price > 150) ∧ (prod.price < 250)}(console ∪ game ∪ accessory))
