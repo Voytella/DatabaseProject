@@ -1,9 +1,3 @@
-create table MEMBERSHIP_INFO (
-	userid VARCHAR(50),
-	purchase_date DATE,
-	duration INT
-);
-insert into MEMBERSHIP_INFO (userid, purchase_date, duration) values ('cbriggs0', '2018-02-14 03:01:29', 37);
 insert into MEMBERSHIP_INFO (userid, purchase_date, duration) values ('tducker1', '2018-09-08 21:29:11', 53);
 insert into MEMBERSHIP_INFO (userid, purchase_date, duration) values ('bkenninghan2', '2018-04-03 17:03:38', 51);
 insert into MEMBERSHIP_INFO (userid, purchase_date, duration) values ('glintott3', '2018-04-09 14:44:19', 38);

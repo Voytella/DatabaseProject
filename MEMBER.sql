@@ -1,9 +1,3 @@
-create table MEMBER (
-	name VARCHAR(50),
-	email VARCHAR(50),
-	phone VARCHAR(50),
-	address VARCHAR(50)
-);
 insert into MEMBER (name, email, phone, address) values ('Holmes Holcroft', 'hholcroft0@live.com', '177-679-8211', '9016 North Circle');
 insert into MEMBER (name, email, phone, address) values ('Drusie Summerly', 'dsummerly1@imdb.com', '973-458-2668', '800 Hansons Alley');
 insert into MEMBER (name, email, phone, address) values ('Llewellyn Bale', 'lbale2@time.com', '170-251-3692', '923 Cordelia Pass');
